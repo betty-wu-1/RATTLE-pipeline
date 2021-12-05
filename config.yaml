@@ -1,0 +1,5 @@
+cluster-config: "config/cluster.yaml"
+cluster: "qsub -l ncpus={cluster.ncpus},walltime={cluster.walltime},mem={cluster.mem},jobfs={cluster.jobfs},storage={cluster.storage} -q {cluster.queue} -P {cluster.project} -o {cluster.outdir} -V "
+jobs: 1
+verbose: true
+notemp: true
