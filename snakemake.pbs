@@ -1,0 +1,13 @@
+### file starts here ###
+#!/bin/bash
+#PBS -q normal
+#PBS -l ncpus=24
+#PBS -P xc17
+#PBS -l walltime=12:00:00
+#PBS -l mem=64GB
+#PBS -l jobfs=100GB
+#PBS -l storage=gdata/xc17
+
+cd /g/data/xc17/betty/GoekeLab_cancer_cell_lines
+module load python3/3.9.2
+snakemake --profile config/ --latency-wait 20 -p rattle_output/SGNex_A549_directRNA_replicate4_run1_results/transcriptome.fq
