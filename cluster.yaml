@@ -1,0 +1,13 @@
+__default__:
+  queue: "normal"
+  ncpus: 24
+  project: "xc17"
+  walltime: "8:00:00"
+  mem: "64GB"
+  jobfs: "100GB"
+  storage: "gdata/xc17"
+  outdir: "logs"  
+
+minimap2:
+  walltime: "10:00:00"
+  mem: "128GB"
